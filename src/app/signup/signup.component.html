@@ -1,0 +1,71 @@
+<GridLayout rows="*" columns="*">
+  <ScrollView class="app-background">
+    <StackLayout>
+      <Image src="res://logoimg" class="m-t-20" stretch="aspectFill" horizontalAlignment="center" [width]="appIconWidth" [height]="appIconHeight"></Image>
+      <Label text="Create your account" class="text-center f-s-18 whiteColor" textWrap="true"></Label>
+      <GridLayout rows="auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto" columns="*,*" class="alignform"
+        horizontalAlignment="center">
+        <TextField row="0" hint="First name" text="" [width]="textFieldWidth" colSpan="2" class="text-field"></TextField>
+        <TextField row="1" hint="Last name" text="" [width]="textFieldWidth" colSpan="2" class="text-field"></TextField>
+        <TextField row="2" hint="password" text=""   secure="true" [width]="textFieldWidth" colSpan="2" class="text-field"></TextField>
+        <TextField row="3" hint="confirm password" text="" secure="true" [width]="textFieldWidth" colSpan="2" class="text-field"></TextField>
+        <TextField row="4" hint="email" text="" [width]="textFieldWidth" colSpan="2" class="text-field"></TextField>
+
+        <GridLayout rows="*" row="5" columns="*,auto,auto,auto" (tap)="pickDate()" colSpan="2" class="text-field-date">
+          <Label col="0" class="p-5-5 f-s-18 " text="Date of birth" textWrap="true"></Label>
+          <Label col="1" class="p-5-5 f-s-18 p-0-5-5 b-l-1" verticalAlignment="middle" [text]="Day" textWrap="true"></Label>
+          <Label col="2" class="p-5-5 f-s-18 p-0-5-5 b-l-1" verticalAlignment="middle" [text]="Month" textWrap="true"></Label>
+          <Label col="3" class="p-5-5 f-s-18 p-0-5-5 b-l-1" verticalAlignment="middle" [text]="Year" textWrap="true"></Label>
+        </GridLayout>
+
+        <RadDataForm row="6" colSpan="2" class="formPage"  tkExampleTitle tkToggleNavButton [source]="formOne">
+          <TKPropertyGroup tkDataFormGroups collapsible="false" name="" hidden="false">
+            <TKDataFormGridLayout tkPropertyGroupLayout></TKDataFormGridLayout>
+            <TKEntityProperty tkPropertyGroupProperties name="gender" index="0" columnIndex="0" valuesProvider="Male, Female">
+              <TKPropertyEditor tkEntityPropertyEditor type="Picker"></TKPropertyEditor>
+            </TKEntityProperty>
+            <TKEntityProperty tkPropertyGroupProperties name="stateofOrgin" index="0" columnIndex="1" valuesProvider="Male, Female">
+              <TKPropertyEditor tkEntityPropertyEditor type="Picker"></TKPropertyEditor>
+            </TKEntityProperty>
+          </TKPropertyGroup>
+        </RadDataForm>
+
+        <GridLayout rows="*" backgroundColor="transparent" columns="*,auto,auto" row="7" colSpan="2" class="text-field-date">
+          <Label text="Are you registered to vote?" verticalAlignment="middle" class="p-l-5 mutedColor f-s-18" textWrap="true"></Label>
+          <CheckBox #CB1 col="1" text="Yes" class="mutedColor" boxType="circle" checked="false"></CheckBox>
+          <CheckBox #CB1 col="2" text="No" class="mutedColor" boxType="circle" checked="false"></CheckBox>
+        </GridLayout>
+
+        <RadDataForm row="8" colSpan="2" class="formPage"  tkExampleTitle tkToggleNavButton [source]="formTwo">
+            <TKPropertyGroup tkDataFormGroups collapsible="false" name="" hidden="false">
+              <TKDataFormGridLayout tkPropertyGroupLayout></TKDataFormGridLayout>
+              <TKEntityProperty tkPropertyGroupProperties name="stateOfreg" displayName="state fo reg" index="0" columnIndex="0" valuesProvider=",  ">
+                <TKPropertyEditor tkEntityPropertyEditor type="Picker"></TKPropertyEditor>
+              </TKEntityProperty>
+              <TKEntityProperty tkPropertyGroupProperties name="party" index="0" columnIndex="1" valuesProvider=", ">
+                <TKPropertyEditor tkEntityPropertyEditor type="Picker"></TKPropertyEditor>
+              </TKEntityProperty>
+            </TKPropertyGroup>
+          </RadDataForm>
+
+        <GridLayout row="9" rows="*" columns="*" colSpan="2" class="signBtn text-field-date" [height]="btnHeight">
+          <Label text="Sign Up" class="f-s-20 f-w-600 text-center" verticalAlignment="middle" textWrap="true"></Label>
+        </GridLayout>
+
+        <GridLayout rows="*" backgroundColor="transparent" columns="*" row="10" colSpan="2" class="text-field-date">
+          <Label verticalAlignment='bottom' class="text-center">
+            <FormattedString>
+              <Span text='Already have an account?' class='mutedColor'></Span>
+              <Span text=' '></Span>
+              <Span text='Sign In' class='whiteColor'></Span>
+            </FormattedString>
+          </Label>
+        </GridLayout>
+
+      </GridLayout>
+
+
+    </StackLayout>
+
+  </ScrollView>
+</GridLayout>
