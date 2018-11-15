@@ -1,3 +1,22 @@
-<GridLayout rows="*" columns="*">
-    <Label text="this is from timeline" textWrap="true"></Label>
+<GridLayout rows="*,*" columns="*">
+  <GridLayout rows="auto,*,*" columns="*">
+    <SearchBar id="searchBar" hint="Search by candidate, state, party" text="" (clear)="onClear" (submit)="onSubmit"
+      class="search-bar"></SearchBar>
+    <!-- <GridLayout row="1" rows="auto,auto,auto,auto,auto" columns="*,auto,*" class="margin">
+      <Label text="Candidate Categories" row="0" col="1" textAlignment="center" class="f-20 p-l-b-t" textWrap="true"></Label>
+      <Label text="Ask a Question" row="1" col="0" verticalAlignment="bottom" class="f-10 " textWrap="true"></Label>
+      <Label text="Endorsed" row="1" col="2" verticalAlignment="bottom" class="f-10 " textWrap="true"></Label>
+      <Label row="1" col="0" class="circle" height="20%" width="15%" backgroundColor="yellow" textWrap="true"></Label>
+      <Label row="1" col="1" class="circle" height="60%" width="45%" backgroundColor="red" textWrap="true"></Label>
+      <Label row="1" col="2" class="circle" height="20%" width="15%" backgroundColor="yellow" textWrap="true"></Label>
+      <Label text="Candidate Name" textAlignment="center" row="3" col="0" colSpan="3" class="f-20 p-l-b-t" textWrap="true"></Label>
+      <Label text="Candidate Party" textAlignment="center" row="4" col="0" colSpan="3" class="f-20 " textWrap="true"></Label>
+    </GridLayout> -->
+
+  </GridLayout>
+
+  <GridLayout row="1" rows="auto,*" columns="*">
+    <tu-tabs-bar row="0" [selectedIndexTab]="selectedIndex" (indexChange)="tabIndexChanged($event)" [filters]="filters"></tu-tabs-bar>
+    <tu-tabs row="1" [selectedIndex]="selectedIndex" (pagerIndexChanged)="pagerIndexChanged($event)" [components]="components"></tu-tabs>
+  </GridLayout>
 </GridLayout>

@@ -1,0 +1,7 @@
+
+
+<GridLayout [row]='row' class="index1" rows="auto"  backgroundColor="white"  columns="*,*,2*">
+    <Label text="Bio" col="0" (tap)="tabIndexChanged(0)" [ngClass]="{'active' : 0 == activeTabIndex, 'inactive' : 0 != activeTabIndex}" class="main-font p-10-0-10-0 text-center f-14"></Label>
+    <Label text="Posts" col="1" (tap)="tabIndexChanged(1)" [ngClass]="{'active' : 1 == activeTabIndex,'inactive' : 1 != activeTabIndex}" class="main-font p-10-0-10-0 text-center f-14"></Label>
+    <Label text="Endorsed candidates" col="2" (tap)="tabIndexChanged(2)" [ngClass]="{'active' : 2 == activeTabIndex,'inactive' : 2 != activeTabIndex}" class="main-font p-10-0-10-0 text-center f-14"></Label>
+</GridLayout>

@@ -1,0 +1,41 @@
+.md-icon{
+    font-family: "Material Icons", "MaterialIcons-Regular","materialicons"
+    } 
+    .text-muted{
+    color: black
+    }
+    .f-24{
+    font-size: 24;
+    }
+    .tfield{
+        font-style: italic; 
+    }
+    .padding{
+        padding: 2dp 3dp 2dp 3dp ;
+    }
+    .p-l-b-t{
+        padding-bottom: 5dp;
+        padding-top: 5dp;
+    }
+    .margin{
+        margin: 25dp;
+    }
+    .bgcolor{
+        background-color: rgb(231,231,231);
+     }
+     .f-20{
+         font-size: 20;
+     }
+     .f-10{
+         font-size: 10;
+     }
+     .circle{
+         border-radius: 100%;
+         border-width: 2dp;
+         border-color: white;
+     }
+
+     .search-bar {
+         margin: 5%;
+         background-color: rgb(226, 226, 226);
+     }

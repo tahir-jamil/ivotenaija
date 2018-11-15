@@ -1,0 +1,14 @@
+<ScrollView>
+    
+    <GridLayout class="tab-margin">
+      
+      <StackLayout>
+        <GridLayout *ngFor='let item of posts; let i=index' rows="auto,auto,auto" columns="">
+          <Label class="headinglabel" text="Post title" textWrap="true"></Label>
+          <Label row="1" class="labelSize" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excep" textWrap="true"></Label>
+          <Label row="2" class="date" text="20/20/2018" textWrap="true"></Label>
+        </GridLayout>
+      </StackLayout>
+      
+    </GridLayout>
+  </ScrollView>

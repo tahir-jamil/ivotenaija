@@ -3,7 +3,6 @@ import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-import { TimelineComponent } from "./timeline/timeline.component";
 import { BottomBarComponent } from "./bottom-bar/bottom-bar.component";
 
 
@@ -16,24 +15,23 @@ import { BottomBarComponent } from "./bottom-bar/bottom-bar.component";
 import { SignupComponent } from './signup/signup.component';
 import { NativeScriptUIDataFormModule } from "nativescript-ui-dataform/angular";
 import { TNSCheckBoxModule } from 'nativescript-checkbox/angular';
-
+import { TimelineModule } from "./timeline/timeline.module";
 
 @NgModule({
    bootstrap: [
       AppComponent
    ],
-   
    imports: [
       NativeScriptModule,
       AppRoutingModule,
       NativeScriptUIDataFormModule,
-      TNSCheckBoxModule
+      TNSCheckBoxModule,
+      TimelineModule
    ],
    declarations: [
       AppComponent,
-      TimelineComponent,
       BottomBarComponent,
-      SignupComponent
+      SignupComponent,
    ],
    providers: [],
    schemas: [

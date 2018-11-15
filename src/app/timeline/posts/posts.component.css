@@ -1,0 +1,21 @@
+.tab-margin {
+    margin: 8%;
+}
+
+.labelSize {
+    color: black;
+    font-size: 16dp;
+}
+
+.date {
+    color:  #999696;
+}
+
+.headinglabel {
+    color:black;
+    font-size: 18dp;
+    font-weight: 600;
+    padding: 10dp 0dp 10dp 0dp;
+    border-bottom-color: #197B30;
+    border-bottom-width: 1dp;
+}

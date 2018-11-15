@@ -4,9 +4,8 @@ import { Routes } from "@angular/router";
 import { TimelineComponent } from "./timeline/timeline.component";
 import { SignupComponent } from "./signup/signup.component";
 
-
 const routes: Routes = [
-    { path: "", redirectTo: "/signup", pathMatch: "full" },
+    { path: "", redirectTo: "/timeline", pathMatch: "full" },
     { path: "signup", component: SignupComponent },
     { path: "timeline", component: TimelineComponent },
 ];

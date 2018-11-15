@@ -1,0 +1,40 @@
+.text-muted {
+    color:#E9ECE3;
+}
+
+.active {
+    color: black;
+    padding: 13% 0% 13% 0%;
+    background-color: white;
+    font-size: 16dp;
+    font-weight: 500;
+}
+
+.inactive {
+    background-color: #7CC576;
+    color:#E9ECE3;
+    padding: 13% 0% 13% 0%;
+    font-size: 16dp;
+    font-weight: 500;
+}
+
+
+.page-background  {
+    background-color: white;
+}
+
+.backgroundPrimary {
+    background-color: white;    
+}
+
+.whiteBg {
+    background-color: white;
+}
+
+.index0 {
+    z-index: 0;
+}
+
+.index1 {
+    z-index: 1;
+}

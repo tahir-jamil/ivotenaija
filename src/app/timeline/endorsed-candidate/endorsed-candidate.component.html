@@ -1,0 +1,14 @@
+<ScrollView>
+
+  <GridLayout class="tab-margin">
+
+    <WrapLayout orientation="horizontal" horizontalAlignment="center" backgroundColor="lightgray">
+      <GridLayout *ngFor='let item of posts; let i=index' [width]="imgWidth" rows="auto,auto" class="tab-margin" columns="">
+        <Image src="res://logo" class="circleimg" [width]="imgWidth" stretch="aspectFill" [height]="imgHeight"></Image>
+        <Label row="1" class="labelSize" text="Candidates name" textWrap="true"></Label>
+      </GridLayout>
+    </WrapLayout>
+
+
+  </GridLayout>
+</ScrollView>
