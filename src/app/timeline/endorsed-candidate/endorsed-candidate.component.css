@@ -1,10 +1,14 @@
 .tab-margin {
-    margin: 2%;
+    margin: 1.5%;
+}
+
+.tab-margin-images {
+    margin: 5dp 0dp 5dp 0dp;
 }
 
 .labelSize {
     color: black;
-    font-size: 16dp;
+    font-size: 12dp;
 }
 
 .date {
