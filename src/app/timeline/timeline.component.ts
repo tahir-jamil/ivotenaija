@@ -17,7 +17,8 @@ export class TimelineComponent implements OnInit {
   searchBarheight: number;
   selectedIndex;
 
-
+  askQuestionBoolean = false;
+  Endorse = "Endorse";
   constructor(private _page: Page,private router: RouterExtensions) { }
 
   ngOnInit() {
@@ -55,6 +56,21 @@ export class TimelineComponent implements OnInit {
         curve: 'linear'
       }
     });
+  }
+
+  askQuestion() {
+    this.askQuestionBoolean = true;
+  }
+  
+  send() {
+    this.askQuestionBoolean = false;
+  }
+
+  public tvtext = "";
+
+
+  changeEndorsed() {
+      this.Endorse = "Endorsed"
   }
 
 }

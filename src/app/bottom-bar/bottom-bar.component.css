@@ -1,15 +1,16 @@
 
 
 .active {
-	color: #00affc;
+	color: white;
 }
 
+
 .inactive {
-    color: white;
+    color: black;
 }
 
 .p-10-0-8-0 {
-    padding: 10dp 0dp 8dp 0dp;
+    padding: 5dp 0dp 5dp 0dp;
 }
 
 .f-26 {

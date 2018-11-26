@@ -19,13 +19,12 @@ export class BottomBarComponent implements OnInit {
   imgHeight: any = "";
   activeIndex = 0;
 
-
   constructor(private routerExtensions: RouterExtensions, private router: Router) { }
 
   ngOnInit() {
     const deviceHeight: number = platformModule.screen.mainScreen.heightDIPs;
     const deviceWidth: number = platformModule.screen.mainScreen.widthDIPs;
-    this.imgHeight = deviceHeight * 0.085;
+    this.imgHeight = deviceHeight * 0.09;
 
     // let data = this.userService.currentLeadUpdated$.subscribe((data) => {
       // console.log(data);
@@ -40,7 +39,7 @@ export class BottomBarComponent implements OnInit {
 
     switch (this.activeIndex) {
       case 0: {
-        this.routerExtensions.navigate(["/home"], {
+        this.routerExtensions.navigate(["/feed"], {
           transition: {
             name: "fade",
             curve: "linear"
@@ -49,7 +48,7 @@ export class BottomBarComponent implements OnInit {
       }
         break;
       case 1: {
-        this.routerExtensions.navigate(["/todo"], {
+        this.routerExtensions.navigate(["/italk"], {
           transition: {
             name: "fade",
             curve: "linear"
@@ -58,7 +57,7 @@ export class BottomBarComponent implements OnInit {
       }
         break;
       case 2: {
-        this.routerExtensions.navigate(["/calender"], {
+        this.routerExtensions.navigate(["/timeline"], {
           transition: {
             name: "fade",
             curve: "linear"
@@ -67,7 +66,7 @@ export class BottomBarComponent implements OnInit {
       }
         break;
       case 3: {
-        this.routerExtensions.navigate(["/chat"], {
+        this.routerExtensions.navigate(["/more"], {
           transition: {
             name: "fade",
             curve: "linear"

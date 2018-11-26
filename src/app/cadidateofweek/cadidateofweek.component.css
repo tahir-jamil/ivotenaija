@@ -1,0 +1,37 @@
+.f-s-22  {
+    font-size: 20dp;
+}
+
+.f-s-20  {
+    font-size: 18dp;
+}
+
+.f-2-600  {
+    font-weight: 600;
+}
+
+.colorWhite {
+    color: white;
+}
+
+.m-t-20 {
+    margin-top: 15dp;
+}
+.m-t-10 {
+    margin-top: 10dp;
+}
+
+.p-d-20 {
+    padding: 30%;
+}
+
+.f-s-23{
+    font-size: 23dp;
+} 
+.yellow {
+    color: yellow;
+}
+
+.close { 
+    margin: -2dp 10dp 0dp 0dp;
+}

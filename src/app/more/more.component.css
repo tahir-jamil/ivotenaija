@@ -1,0 +1,11 @@
+.moreItem {
+    color: rgba(6,6,6,1);
+    font-size: 18dp;
+    text-align: left;
+    padding: 12% 20% 12% 20%;
+}
+
+
+.actionbar {
+    background-color: rgba(217,213,213,1)
+}

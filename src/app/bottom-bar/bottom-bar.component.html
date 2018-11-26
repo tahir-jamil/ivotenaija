@@ -1,18 +1,26 @@
-<GridLayout row="1" backgroundColor="#00183d" [height]="imgHeight" rows="*" class="p-10-0-8-0" columns="*,*,*,*">
+<GridLayout row="1" backgroundColor="rgba(199,178,153,1)" [height]="imgHeight" rows="*" class="p-10-0-8-0" columns="*,*,*,*">
   <StackLayout verticalAlignment="top" col="0" (tap)="onChangeIndex(0)">
     <Label text="&#xf015;" [ngClass]="{'active' : activeIndexValue == 0, 'inactive' : activeIndexValue != 0}" class="fa-icon f-26"
       verticalAlignment="middle" horizontalAlignment="center" textWrap="true"></Label>
+    <Label text="feed" [ngClass]="{'active' : activeIndexValue == 0, 'inactive' : activeIndexValue != 0}" verticalAlignment="middle" horizontalAlignment="center" textWrap="true"></Label>
+
   </StackLayout>
   <StackLayout verticalAlignment="top" col="1" (tap)="onChangeIndex(1)">
     <Label text="&#xf004;" [ngClass]="{'active' : activeIndexValue == 1, 'inactive' : activeIndexValue != 1}" class="fa-icon f-26"
       verticalAlignment="middle" horizontalAlignment="center" textWrap="true"></Label>
+    <Label text="iTalkNiaja" [ngClass]="{'active' : activeIndexValue == 1, 'inactive' : activeIndexValue != 1}" verticalAlignment="middle" horizontalAlignment="center" textWrap="true"></Label>
+
   </StackLayout>
   <StackLayout verticalAlignment="top" col="2" (tap)="onChangeIndex(2)">
     <Label text="&#xf073;" [ngClass]="{'active' : activeIndexValue == 2, 'inactive' : activeIndexValue != 2}" class="fa-icon f-26"
       verticalAlignment="middle" horizontalAlignment="center" textWrap="true"></Label>
+    <Label text="Search" [ngClass]="{'active' : activeIndexValue == 2, 'inactive' : activeIndexValue != 2}" verticalAlignment="middle" horizontalAlignment="center" textWrap="true"></Label>
+
   </StackLayout>
   <StackLayout verticalAlignment="top" col="3" (tap)="onChangeIndex(3)">
     <Label text="&#xf075;" [ngClass]="{'active' : activeIndexValue == 3, 'inactive' : activeIndexValue != 3}" class="fa-icon f-26"
       verticalAlignment="middle" horizontalAlignment="center" textWrap="true"></Label>
+    <Label text="More" [ngClass]="{'active' : activeIndexValue == 3, 'inactive' : activeIndexValue != 3}" verticalAlignment="middle" horizontalAlignment="center" textWrap="true"></Label>
+
   </StackLayout>
 </GridLayout>

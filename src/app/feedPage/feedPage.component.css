@@ -1,0 +1,79 @@
+.f-s-22  {
+    font-size: 16dp;
+}
+
+.f-s-26  {
+    font-size: 18dp;
+}
+
+.party {
+    color: #B30626;
+}
+
+.f-2-600  {
+    font-weight: 600;
+}
+
+.black {
+    color: black;
+}
+
+.m-t-20 {
+    margin-top: 3dp;
+}
+
+.m-t-10 {
+    margin-top: 6dp;
+}
+
+
+.p-d-20 {
+    padding: 10% 30% 10% 30%;
+}
+
+
+.labelSize {
+    color: black;
+    font-size: 16dp;
+}
+
+.date {
+    color:  #999696;
+}
+
+.headinglabel {
+    color:black;
+    font-size: 18dp;
+    font-weight: 600;
+    padding: 10dp 0dp 10dp 0dp;
+    border-bottom-color: #197B30;
+    border-bottom-width: 1dp;
+}
+
+
+.p-l-4 {
+    padding-left: 2%;
+}
+
+
+.margin{
+    margin: 25dp;
+}
+
+.bgcolor{
+    background-color: rgb(231,231,231);
+ }
+
+
+ .countDown {
+	color: rgba(255,255,255,1);
+	font-family: "Roboto Condensed";
+	font-size: 16dp;
+	font-weight: bold;
+    text-align: center;
+    padding: 8% 0% 8% 0%;
+ }
+
+ .countDownbg {
+     background-color: black;
+ }

@@ -3,7 +3,6 @@ import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-import { BottomBarComponent } from "./bottom-bar/bottom-bar.component";
 
 
 
@@ -16,6 +15,13 @@ import { SignupComponent } from './signup/signup.component';
 import { NativeScriptUIDataFormModule } from "nativescript-ui-dataform/angular";
 import { TNSCheckBoxModule } from 'nativescript-checkbox/angular';
 import { TimelineModule } from "./timeline/timeline.module";
+import { CadidateofweekComponent } from "./cadidateofweek/cadidateofweek.component";
+import { FeedPageComponent } from "./feedPage/feedPage.component";
+import { ItalkComponent } from "./italk/italk.component";
+import { SearchComponent } from "./search/search.component";
+import { TimelineComponent } from "./timeline/timeline.component";
+import { MoreComponent } from "./more/more.component";
+import { BottomBarComponent } from "./bottom-bar/bottom-bar.component";
 
 @NgModule({
    bootstrap: [
@@ -26,12 +32,17 @@ import { TimelineModule } from "./timeline/timeline.module";
       AppRoutingModule,
       NativeScriptUIDataFormModule,
       TNSCheckBoxModule,
-      TimelineModule
+      TimelineModule,
    ],
    declarations: [
       AppComponent,
-      BottomBarComponent,
       SignupComponent,
+      CadidateofweekComponent,
+      FeedPageComponent,
+      ItalkComponent,
+      SearchComponent,
+      MoreComponent,
+      BottomBarComponent
    ],
    providers: [],
    schemas: [
