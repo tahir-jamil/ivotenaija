@@ -9,6 +9,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class TabsBarComponent implements OnInit {
 
   @Input() filters = [];
+  @Input() selectedIndex = 0;
 
   @Output() indexChange = new EventEmitter;
   
@@ -16,18 +17,15 @@ export class TabsBarComponent implements OnInit {
   imgHeight;
   tabPadding;
 
-  selectedIndex = 0;
-
   constructor() { }
 
   ngOnInit(): void {
   }
 
-
+  
   tabIndexChanged(newIndex) {
     this.selectedIndex = newIndex;
     console.log(newIndex);
-    
     this.indexChange.emit(this.selectedIndex);
   }
 

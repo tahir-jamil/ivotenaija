@@ -1,0 +1,21 @@
+.p-12-12 {
+    padding: 0dp 25% 0dp 18%;
+}
+
+
+.f-35 {
+    font-size: 50dp;
+}
+
+.color {
+    color: #B3B3B3;
+}
+
+.headinglabel {
+    color:black;
+    font-size: 18dp;
+    font-weight: 600;
+    padding: 10dp 0dp 10dp 0dp;
+    border-bottom-color: #197B30;
+    border-bottom-width: 1dp;
+}

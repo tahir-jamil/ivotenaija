@@ -56,12 +56,12 @@ background-color: rgb(231,231,231);
     border-radius: 100%;
 }
 
-.cdName {
-	color: #3E3A3A;
+.cadidatate {
+	color: #FEFEFE;
 }
 
 .pName {
-    color: #8B8686;
+    color: #FFF200;
 }
 
 .cName {
@@ -70,6 +70,7 @@ background-color: rgb(231,231,231);
 
 .transparentColor {
 background-color: rgba(255, 255, 255,0.6);
+border-radius: 10%;
 }
 
 .questionbox {
@@ -84,4 +85,13 @@ background-color: rgba(255, 255, 255,0.6);
     color: white;
     font-weight: 500;
     margin-top: 10dp;
+}
+
+
+.f-35 {
+    font-size: 50dp;
+}
+
+.color {
+    color: white;
 }

@@ -3,6 +3,7 @@ import { RouterExtensions } from "nativescript-angular/router";
 import * as platformModule from "tns-core-modules/platform";
 import * as utils from "tns-core-modules/utils/utils";
 import { Router, NavigationExtras } from "@angular/router";
+import { PageService } from "../page.service";
 
 
 @Component({
@@ -17,19 +18,32 @@ export class BottomBarComponent implements OnInit {
 
   bottomBarHeight: any = "";
   imgHeight: any = "";
+  imgWidth: any = "";
   activeIndex = 0;
+  opactiy = true;
 
-  constructor(private routerExtensions: RouterExtensions, private router: Router) { }
+  constructor(private routerExtensions: RouterExtensions, private router: Router, private userService: PageService) { }
 
   ngOnInit() {
     const deviceHeight: number = platformModule.screen.mainScreen.heightDIPs;
     const deviceWidth: number = platformModule.screen.mainScreen.widthDIPs;
-    this.imgHeight = deviceHeight * 0.09;
+    this.bottomBarHeight = deviceHeight * 0.1;
+    this.imgHeight = deviceHeight * 0.04;
+    this.imgWidth = deviceHeight * 0.04;
 
     // let data = this.userService.currentLeadUpdated$.subscribe((data) => {
       // console.log(data);
       // this.onChangeIndex(data);
     // })
+
+     this.userService.currentLeadUpdated$.subscribe((data) => {
+      console.log('sdfsd'+data);
+      if (data == false) {
+        this.opactiy = false;
+      } else {
+        this.opactiy = true;
+      }
+    })
   }
 
 

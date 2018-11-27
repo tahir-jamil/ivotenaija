@@ -3,9 +3,6 @@ import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-
-
-
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
 
@@ -19,9 +16,10 @@ import { CadidateofweekComponent } from "./cadidateofweek/cadidateofweek.compone
 import { FeedPageComponent } from "./feedPage/feedPage.component";
 import { ItalkComponent } from "./italk/italk.component";
 import { SearchComponent } from "./search/search.component";
-import { TimelineComponent } from "./timeline/timeline.component";
 import { MoreComponent } from "./more/more.component";
 import { BottomBarComponent } from "./bottom-bar/bottom-bar.component";
+import { FeeddetailComponent } from './feeddetail/feeddetail.component';
+import { PageService } from "./page.service";
 
 @NgModule({
    bootstrap: [
@@ -32,7 +30,7 @@ import { BottomBarComponent } from "./bottom-bar/bottom-bar.component";
       AppRoutingModule,
       NativeScriptUIDataFormModule,
       TNSCheckBoxModule,
-      TimelineModule,
+      TimelineModule
    ],
    declarations: [
       AppComponent,
@@ -42,9 +40,10 @@ import { BottomBarComponent } from "./bottom-bar/bottom-bar.component";
       ItalkComponent,
       SearchComponent,
       MoreComponent,
-      BottomBarComponent
+      BottomBarComponent,
+      FeeddetailComponent
    ],
-   providers: [],
+   providers: [PageService],
    schemas: [
       NO_ERRORS_SCHEMA
    ]

@@ -17,14 +17,26 @@ export class TimelineComponent implements OnInit {
   searchBarheight: number;
   selectedIndex;
 
+  iconWidht;
+  iconHeight;
+  circleImgHeight;
+  circleImgWidth;
+
   askQuestionBoolean = false;
   Endorse = "Endorse";
   constructor(private _page: Page,private router: RouterExtensions) { }
 
   ngOnInit() {
     this._page.actionBarHidden = true;
-    let deviceHeight: number = platformModule.screen.mainScreen.heightDIPs;
+    let deviceHeight: number = platformModule.screen.mainScreen.heightDIPs;;
+     let deviceWidth: number = platformModule.screen.mainScreen.widthDIPs;
     this.searchBarheight = deviceHeight * 0.085;
+    this.iconWidht = deviceWidth * 0.1;
+    this.iconHeight = deviceHeight * 0.07;
+
+    this.circleImgWidth = deviceWidth * 0.31;
+    this.circleImgHeight = deviceHeight * 0.17;
+    
   }
 
   filters = [
@@ -70,7 +82,18 @@ export class TimelineComponent implements OnInit {
 
 
   changeEndorsed() {
-      this.Endorse = "Endorsed"
+      if (this.Endorse == 'Endorsed') {
+        this.Endorse = 'Endorse';
+      } else {
+        this.Endorse = 'Endorsed';
+      }
   }
 
+  get getIamge() {
+    if (this.Endorse == 'Endorsed') {
+      return 'res://endorsed';
+    } else {
+      return 'res://endorse';
+    }
+  }
 }

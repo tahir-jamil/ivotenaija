@@ -8,6 +8,7 @@ import { FeedPageComponent } from "./feedPage/feedPage.component";
 import { ItalkComponent } from "./italk/italk.component";
 import { SearchComponent } from "./search/search.component";
 import { MoreComponent } from "./more/more.component";
+import { FeeddetailComponent } from "./feeddetail/feeddetail.component";
 
 const routes: Routes = [
     { path: "", redirectTo: "/feed", pathMatch: "full" },
@@ -18,6 +19,7 @@ const routes: Routes = [
     { path: "italk", component: ItalkComponent },
     { path: "search", component: SearchComponent },
     { path: "more", component: MoreComponent },
+    { path: "feedDetail", component: FeeddetailComponent },
 ];
 
 @NgModule({
